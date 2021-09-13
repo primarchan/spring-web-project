@@ -1,0 +1,6 @@
+package org.taesan.persistence;
+
+public class JDBCTests {
+
+	
+}

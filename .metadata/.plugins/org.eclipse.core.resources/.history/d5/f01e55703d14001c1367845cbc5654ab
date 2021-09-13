@@ -1,0 +1,10 @@
+package org.taesan.persistence;
+
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+public class JDBCTests2 {
+	
+	Class.
+
+}

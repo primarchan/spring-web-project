@@ -1,0 +1,7 @@
+package org.taesan.sample;
+
+public class Restaurant {
+	
+	private Chef chef;
+
+}

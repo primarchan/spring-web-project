@@ -1,0 +1,17 @@
+package org.taesan.persistence;
+
+import org.junit.Test;
+
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+public class JDBCTests {
+	
+	@Test
+	public void testConnectiont() throws Exception {
+		
+		Class clz = Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		Connection
+	}
+}

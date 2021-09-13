@@ -1,0 +1,7 @@
+package org.taesan.mapper;
+
+public interface TimeMapper {
+	
+	@Select
+	String getTime;
+}
