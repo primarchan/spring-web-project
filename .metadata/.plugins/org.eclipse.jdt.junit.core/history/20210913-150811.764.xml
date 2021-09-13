@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="DataSourceTests" project="ex00" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="org.taesan.persistence.DataSourceTests" time="0.021">
-    <testcase name="testConnection" classname="org.taesan.persistence.DataSourceTests" time="0.012"/>
-    <testcase name="testConnection2" classname="org.taesan.persistence.DataSourceTests" time="0.008"/>
-  </testsuite>
-</testrun>
