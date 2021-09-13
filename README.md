@@ -1,5 +1,6 @@
 # :pushpin: SpringProject02
 >Spring Framework 기반 웹 서비스
+>
 >[코드로 배우는 스프링 웹 프로젝트]을 통해 학습된 내용을 기반으로 제작된 프로젝트
 
 </br>
@@ -33,8 +34,9 @@
 
 
 ## 4. 핵심 기능
-이 서비스는 총 7단계로 구성되어있습니다.
-[Spring 개발 환경 구축 단계] 부터 [Spring Web Security를 이용한 로그인 처리]까지 각 단계별로 기능들을 구현했습니다.
+>이 서비스는 총 7단계로 구성되어있습니다.
+>
+>[Spring 개발 환경 구축 단계] 부터 [Spring Web Security를 이용한 로그인 처리]까지 각 단계별로 기능들을 구현했습니다.
 
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
