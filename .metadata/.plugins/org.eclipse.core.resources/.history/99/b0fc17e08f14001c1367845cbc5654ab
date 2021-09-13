@@ -10,6 +10,4 @@ public interface TimeMapper {
 	String getTime();
 	
 	String getTime2();
-	
-	String getTime3();
 }
