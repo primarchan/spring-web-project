@@ -5,7 +5,279 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-09-09T19:00:00Z</updated>
+  <updated>2021-09-15T08:44:10Z</updated>
+  <entry>
+    <title>Spring Framework 5.3.10 and 5.2.17 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-framework-5-3-10-and-5-2-17-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St?phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2021-09-15:4545</id>
+    <updated>2021-09-15T08:44:10Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; and &lt;code&gt;5.2.17&lt;/code&gt; are available now.&lt;/p&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.10"&gt;45 fixes and improvements&lt;/a&gt;. Spring Framework &lt;code&gt;5.2.17&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.17.RELEASE"&gt;13 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Stay tuned for follow-up Spring Boot releases next week.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.10/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tips: A Bootiful Look at SpringOne 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-tips-a-bootiful-look-at-springone-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-09-12:4543</id>
+    <updated>2021-09-15T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, I&amp;rsquo;m joined by teammates Tiffany Jernigan and Mario Gray as we recap some of our favorite talks from the just-finished SpringOne 2021 event! Did you miss the show? (why)? Fret not: we&amp;rsquo;ll look at some of our favorite moments from SpringOne 2021! &lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VMtUzytjo6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - September 14th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/14/this-week-in-spring-september-14th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-09-14:4544</id>
+    <updated>2021-09-14T10:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! It&amp;rsquo;s September 14th! I can&amp;rsquo;t believe it. I know this is a common refrain on my weekly posts, but can you &lt;em&gt;believe&lt;/em&gt; it&amp;rsquo;s already nearly Fall and Winter? What is happening?? How&amp;rsquo;d we get here so quickly? &lt;/p&gt;
+&lt;p&gt;Anyway, how are you doin&amp;rsquo;? I&amp;rsquo;m doing alright! It&amp;rsquo;s been kinda a crazy week. I was in the studio all day and some of the night yesterday filming a new &lt;em&gt;Livelessons&lt;/em&gt; video that I can&amp;rsquo;t wait for y&amp;rsquo;all to see. (But be forewarned: there will be &lt;code&gt;.YAML&lt;/code&gt;!) &lt;/p&gt;
+&lt;p&gt;Then, at 3am my time, I did a presentation for the Japanese Java User Group. This would be one thing in of itself, but what made this special for me was that I was supposed to appear at the JJUG six weeks ago. Yes, &lt;em&gt;that&lt;/em&gt; six weeks ago. The same six weeks ago when I was convalescing with COVID-19, six weeks ago. Needless to say (but I will!), when one is sick with the virus, they sleep. So I did. A lot. And I ended up accidentally sleeping through my appearance. And they graciously, empathetically, and kindly agreed to reschedule a week (or two? It&amp;rsquo;s all a blur to me) later. Anyway, I also slept through that one!! Ugh! I was and am so embarrassed! I still am mortified that I disappointed folks not once (perhaps understandable) but twice (_what_?!). Last night was my third attempt at being there in less than two months! They were so gracious and kind. Thank you so, so, &lt;em&gt;so&lt;/em&gt; much JJUG, for coming out and for making the show fun and for all the great questions! &lt;/p&gt;
+&lt;p&gt;And today, I need to get back to the studio, so let&amp;rsquo;s get this wicked, wonderful, weekly roundup done and out there! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In last week&amp;rsquo;s &lt;a href="https://spring.io/blog/2021/09/09/a-bootiful-podcast-spring-security-engineer-josh-cummings"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to Spring Security Engineer Josh Cummings&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/14/efficient-parsing-of-reactive-buffer-streams"&gt;Efficient Parsing of Reactive Buffer Streams&lt;/a&gt; - a very, detailed post by Spring legend Arjen Poutsma.&lt;/li&gt;
+  &lt;li&gt;Oh, and bt the way, here&amp;rsquo;s &lt;a href="https://youtube.com/watch?v=OjN6BafjOqg&amp;feature=share"&gt;my &lt;em&gt;Kubernetes Native Java&lt;/em&gt; talk from the Japanese Java User Group last night, if you want to join in on the 90 minutes of fun&lt;/a&gt;! This talk looks at a &lt;em&gt;ton&lt;/em&gt; of stuff: motivations for cloud native computing, reactive programming, R2DBC, HTTP/REST APIs with Spring WebFlux, Kubernetes probes and observability with the Spring Boot Actuator and Micrometer, Buildpacks/Paketo/KPack, GraalVM native images with Spring Native, RSocket, Kubernetes-specific configuration, API gateways with Spring Cloud Gateway, service orchestration and composition with reactive APIs, data integration gateways GraphQL with Spring GraphQL. Oh, and we deploy to Kubernetes and all the code was in a mix of Java and Kotlin! There&amp;rsquo;s a &lt;em&gt;ton&lt;/em&gt; of fun in these 90 minutes! Don&amp;rsquo;t miss it!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/jonatan_ivanov/status/1436446588138704897?s=12"&gt;We&amp;rsquo;ve released Spring Cloud Sleuth OpenTelemetry 1.0.0-M10 and 1.1.0-M1! &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I liked this community comparison of &lt;a href="https://www.dhaval-shah.com/performance-comparison-rsocket-webflux/"&gt;Spring Webflux and Spring&amp;rsquo;s RSocket integration&lt;/a&gt;. Hint: RSocket is &lt;em&gt;fast&lt;/em&gt;, and &lt;em&gt;very&lt;/em&gt; stable!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/PieterHumphrey/status/1435788337097297925"&gt;Check out what &lt;em&gt;Java Brains&lt;/em&gt; was able to do in ~15 hours - they built a full stack &lt;em&gt;Good Reads&lt;/em&gt; clone with Spring Security Spring Data and Spring Boot to scale to millions of records with Cassandra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/vmworld/2021/09/simplify-cloud-migration-and-modernization-with-microsoft-and-vmware.html"&gt;Simplify Cloud Migration and Modernization with Microsoft and VMware&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/09/spring-data-jdbc-how-to-use-custom-id-generation"&gt;Spring Data JDBC - How to use custom ID generation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1435633964031545346"&gt;Last week, we announced the launch of Azure Spring Cloud Enterprise, managed by Microsoft! Learn more about how this service works&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Also, I just wanna thank folks for coming to the talk &lt;a href="https://twitter.com/juliendubois/status/1437819092459741187?s=21"&gt;that Julien Dubois&lt;/a&gt;, Layla Porter and I did at SpringOne 2021. We received 94% positive feedback from more than 2,000 votes. Thank you for coming and thank you for making it fun!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Efficient Parsing of Reactive Buffer Streams</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/14/efficient-parsing-of-reactive-buffer-streams" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Arjen Poutsma</name>
+    </author>
+    <id>tag:spring.io,2021-09-10:4542</id>
+    <updated>2021-09-14T09:29:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;It has been a while since Spring Framework 5.3 was released.
+One of the features in that release was a &lt;a href="https://github.com/spring-projects/spring-framework/issues/21659"&gt;major overhaul of our Reactive Multipart support&lt;/a&gt;.
+In this blog post, we share some of the knowledge learned while working on this feature.
+Specifically, we focus on finding a token within a stream of byte buffers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="multipart-form-data"&gt;&lt;a class="anchor" href="#multipart-form-data"&gt;&lt;/a&gt;Multipart Form Data&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Whenever you upload a file, your browser sends it&amp;#8201;&amp;#8212;&amp;#8201;and other fields in the form&amp;#8201;&amp;#8212;&amp;#8201;to the server as a &lt;code&gt;multipart/form-data&lt;/code&gt; message.
+The exact format of these messages is described in &lt;a href="https://datatracker.ietf.org/doc/html/rfc7578"&gt;RFC 7578&lt;/a&gt;.
+If you submit a simple form with a single text field called &lt;code&gt;foo&lt;/code&gt; and a file selector called &lt;code&gt;file&lt;/code&gt;, the &lt;code&gt;multipart/form-data&lt;/code&gt; message looks something like this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;POST / HTTP/1.1
+Host: example.com
+Content-Type: multipart/form-data;boundary="boundary" &lt;b class="conum"&gt;(1)&lt;/b&gt;
+
+--boundary &lt;b class="conum"&gt;(2)&lt;/b&gt;
+Content-Disposition: form-data; name="foo" &lt;b class="conum"&gt;(3)&lt;/b&gt;
+
+bar
+--boundary &lt;b class="conum"&gt;(4)&lt;/b&gt;
+Content-Disposition: form-data; name="file"; filename="lorum.txt" &lt;b class="conum"&gt;(5)&lt;/b&gt;
+Content-Type: text/plain
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis metus id vestibulum nullam.
+
+--boundary-- &lt;b class="conum"&gt;(6)&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="colist arabic"&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;Content-Type&lt;/code&gt; header of the message contains the &lt;code&gt;boundary&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The boundary is used to start the first part. It is preceded by &lt;code&gt;--&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The first part contains the value of the text field, &lt;code&gt;foo&lt;/code&gt;, as can be seen in the part headers. The value of the field is &lt;code&gt;bar&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The boundary is used to separate between the first and second part. Again, it is preceded by &lt;code&gt;--&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The second part contains the contents of the submitted file, named &lt;code&gt;lorum.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The end of the message is indicated by the boundary. It is preceded and followed by &lt;code&gt;--&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="finding-the-boundaries"&gt;&lt;a class="anchor" href="#finding-the-boundaries"&gt;&lt;/a&gt;Finding the Boundaries&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The boundary in a &lt;code&gt;multipart/form-data&lt;/code&gt; message is quite important.
+It is specified as a parameter of the &lt;code&gt;Content-Type&lt;/code&gt; header.
+When preceded by two hyphens (&lt;code&gt;--&lt;/code&gt;), the boundary indicates the beginning of a new part.
+When also followed by &lt;code&gt;--&lt;/code&gt;, the boundary indicates the end of the message.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Finding the boundary in the stream of incoming byte buffers is key when parsing multipart messages.
+Doing so seems simple enough:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;private int indexOf(DataBuffer source, byte[] target) {
+  int max = source.readableByteCount() - target.length + 1;
+  for (int i = 0; i &amp;lt; max; i++) {
+    boolean found = true;
+    for (int j = 0; j &amp;lt; target.length; j++) {
+      if (source.getByte(i + j) != target[j]) {
+        found = false;
+        break;
+      }
+    }
+    if (found) {
+      return i;
+    }
+  }
+  return -1;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;However, there is a complication:The boundary can be split across two buffers, which&amp;#8201;&amp;#8212;&amp;#8201;in a Reactive environment&amp;#8201;&amp;#8212;&amp;#8201;might not arrive at the same time.
+For example, given the sample multipart message shown earlier, the first buffer might contain the following:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;POST / HTTP/1.1
+Host: example.com
+Content-Type: multipart/form-data;boundary="boundary"
+
+--boundary
+Content-Disposition: form-data; name="foo"
+
+bar
+--bou&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;While the next buffer contains the remainder:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;ndary
+Content-Disposition: form-data; name="file"; filename="lorum.txt"
+Content-Type: text/plain
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis metus id vestibulum nullam.
+
+--boundary--&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If we inspect one buffer at the time, we can not find split boundaries like these.
+Instead, we need to find the boundary across multiple buffers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;One way to solve this problem would be to wait until all buffers have been received, &lt;a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/io/buffer/DataBufferUtils.html#join-org.reactivestreams.Publisher-"&gt;join them&lt;/a&gt;, and locate the boundaries afterwards.
+The following example does so, using a sample stream and the &lt;code&gt;indexOf&lt;/code&gt; method defined earlier:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;Flux&amp;lt;DataBuffer&amp;gt; stream = Flux.just("foo", "bar", "--boun", "dary", "baz")
+  .map(s -&amp;gt; factory.wrap(s.getBytes(UTF_8)));
+byte[] boundary = "--boundary".getBytes(UTF_8);
+
+Mono&amp;lt;Integer&amp;gt; result = DataBufferUtils.join(stream)
+  .map(joined -&amp;gt; indexOf(joined, boundary));
+
+StepVerifier.create(result)
+  .expectNext(6)
+  .verifyComplete();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Using Reactor&amp;#8217;s &lt;code&gt;StepVerifier&lt;/code&gt;, we see that the boundary starts at index 6.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There is one major downside to this approach: joining multiple buffers into one effectively stores the entire multipart message in memory.
+Multipart messages are primarily used to upload (large) files, so this is not a viable option.
+Instead, we need a smarter way to locate the boundary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="knuth-to-the-rescue"&gt;&lt;a class="anchor" href="#knuth-to-the-rescue"&gt;&lt;/a&gt;Knuth to the Rescue!&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Luckily, such a way exists in the form of the &lt;a href="https://en.wikipedia.org/wiki/Knuth?Morris?Pratt_algorithm"&gt;Knuth?Morris?Pratt&lt;/a&gt; algorithm.
+The main idea behind this algorithm is that if we already matched several bytes of the boundary but the next byte does not match, we do not need to restart the from the beginning.
+To do so, the algorithm maintains state, in the form of a position in a precomputed table that contains the number of bytes that can be skipped after a mismatch.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In Spring Framework, we have implemented the Knuth-Morris-Pratt algorithm in the &lt;a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/io/buffer/DataBufferUtils.Matcher.html"&gt;&lt;code&gt;Matcher&lt;/code&gt;&lt;/a&gt; interface, which you can obtain an instance of through &lt;a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/io/buffer/DataBufferUtils.html#matcher-byte:A-"&gt;&lt;code&gt;DataBufferUtils::matcher&lt;/code&gt;&lt;/a&gt;.
+You can also check out the &lt;a href="https://github.com/spring-projects/spring-framework/blob/d83fb099149bd9178ee7d103c6da1ea52152c1cc/spring-core/src/main/java/org/springframework/core/io/buffer/DataBufferUtils.java#L837"&gt;source code&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here, we use the &lt;code&gt;Matcher&lt;/code&gt; to give us the end indices of &lt;code&gt;boundary&lt;/code&gt; in &lt;code&gt;stream&lt;/code&gt;, using the same sample input as earlier:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;Flux&amp;lt;DataBuffer&amp;gt; stream = Flux.just("foo", "bar", "--boun", "dary", "baz")
+  .map(s -&amp;gt; factory.wrap(s.getBytes(UTF_8)));
+byte[] boundary = "--boundary".getBytes(UTF_8);
+
+DataBufferUtils.Matcher matcher = DataBufferUtils.matcher(boundary);
+Flux&amp;lt;Integer&amp;gt; result = stream.map(matcher::match);
+
+StepVerifier.create(result)
+  .expectNext(-1)
+  .expectNext(-1)
+  .expectNext(-1)
+  .expectNext(3)
+  .expectNext(-1)
+  .verifyComplete();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Note that the Knuth-Morris-Pratt algorithm gives the &lt;strong&gt;end&lt;/strong&gt; index of the boundary, which explains the test results: the boundary does not end until index 3 in the second-to-last buffer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As can be expected, Spring Framework&amp;#8217;s &lt;code&gt;MultipartParser&lt;/code&gt; makes heavy use of &lt;code&gt;Matcher&lt;/code&gt;, for&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/d83fb099149bd9178ee7d103c6da1ea52152c1cc/spring-web/src/main/java/org/springframework/http/codec/multipart/MultipartParser.java#L292"&gt;Finding the first boundary&lt;/a&gt; by looking for the boundary prefixed by &lt;code&gt;--&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/d83fb099149bd9178ee7d103c6da1ea52152c1cc/spring-web/src/main/java/org/springframework/http/codec/multipart/MultipartParser.java#L480"&gt;Finding subsequent boundaries&lt;/a&gt; by looking for the boundary prefixed by &lt;code&gt;CRLF&lt;/code&gt; (end of previous part) and &lt;code&gt;--&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/d83fb099149bd9178ee7d103c6da1ea52152c1cc/spring-web/src/main/java/org/springframework/http/codec/multipart/MultipartParser.java#L369"&gt;Finding the &lt;code&gt;CRLF&lt;/code&gt; &lt;code&gt;CRLF&lt;/code&gt; separator&lt;/a&gt; between the part headers and part body.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you need to find a series of bytes in a stream of byte buffers, give the &lt;code&gt;Matcher&lt;/code&gt; a try!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Spring Security Engineer Josh Cummings</title>
     <link rel="alternate" href="https://spring.io/blog/2021/09/09/a-bootiful-podcast-spring-security-engineer-josh-cummings" />
@@ -740,117 +1012,6 @@ class ServiceConfiguration {&#xD;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; |  &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tools 4.11.1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/18/spring-tools-4-11-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2021-08-18:4519</id>
-    <updated>2021-08-18T11:44:09Z</updated>
-    <content type="html">&lt;p&gt;ear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am happy to announce the 4.11.1 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#fixes-in-this-release" class="anchor" name="fixes-in-this-release"&gt;&lt;/a&gt;Fixes in this release&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: [codespaces] spring boot extension starting up multiple times in Codespaces setting (&lt;a href="https://github.com/spring-projects/sts4/issues/669"&gt;#669&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: [codespaces] spring boot extension doesn&amp;rsquo;t find the right JDK when connecting to a codespace (&lt;a href="https://github.com/spring-projects/sts4/issues/670"&gt;#670&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: JAVA_Home should be right but still shows &amp;ldquo;Note Java 8 can still be used in your own projects&amp;rdquo; (&lt;a href="https://github.com/spring-projects/sts4/issues/664"&gt;#664&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: progress view shows many AsyncLiveExpression refresh messages and doesn&amp;rsquo;t respond anymore (&lt;a href="https://github.com/spring-projects/sts4/issues/653"&gt;#653&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: latest CI builds do not show port of running app anymore (&lt;a href="https://github.com/spring-projects/sts4/issues/659"&gt;#659&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: Property &amp;lsquo;commit_message&amp;rsquo; not recognized for semver resources (&lt;a href="https://github.com/spring-projects/sts4/issues/655"&gt;#655&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: GitResource schema, add missing properties (&lt;a href="https://github.com/spring-projects/sts4/issues/671"&gt;#671&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: Unknown property &amp;lsquo;fetch_tags&amp;rsquo; for type &amp;lsquo;GitSource&amp;rsquo;(YamlSchemaProblem) (&lt;a href="https://github.com/spring-projects/sts4/issues/668"&gt;#668&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Spring Tools 4.12.0 is scheduled to be released in late September 2021.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - August 17th, 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/17/this-week-in-spring-august-17th-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-08-17:4518</id>
-    <updated>2021-08-17T10:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! How&amp;rsquo;re you doing? I&amp;rsquo;m alright. I&amp;rsquo;ve been recuperating from a COVID-19 infection. Today was the first day in a while that I woke up and wasn&amp;rsquo;t short of breath. Most days, I&amp;rsquo;ve woken up, hacked a few wads of phlegm into the toilet, and then my breathing was fine. But today I woke up and wasn&amp;rsquo;t short of breath in the first place. (I still hacked a few wads of phlegm). Thank goodness for vaccines, or I expect my experience of this virus would&amp;rsquo;ve been much worse as a lifelong asthmatic. Things are looking up! &lt;/p&gt;
-&lt;p&gt;And then, as if my fortunes couldn&amp;rsquo;t get any better, I got to compiling this week&amp;rsquo;s roundup and there&amp;rsquo;s a &lt;em&gt;ton&lt;/em&gt; of great stuff in it so let&amp;rsquo;s dive right in!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Get started with &lt;a href="https://axoniq.io/blog-overview/introducing-the-axoniq-initializr?utm_campaign=Initializr%20Campaign&amp;utm_content=176483439&amp;utm_medium=social&amp;utm_source=twitter&amp;hss_channel=tw-803611480864227328"&gt;Spring Boot and the CQRS framework Axon&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;In last week&amp;rsquo;s installment of &lt;a href="https://spring.io/blog/2021/08/12/a-bootiful-podcast-neo4j-ceo-and-spring-data-cofounder-emil-eifrem-on-graphs-neo4j-and-more"&gt;A Bootiful Podcast: Neo4J CEO and Spring Data cofounder Emil Eifrem on graphs, Neo4J, and more&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://viacom.tech/blog/2021/08/02/alexa_request_validation_with_spring_cloud_gateway.html"&gt;Alexa Request Validation with Spring Cloud Gateway&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://foojay.io/"&gt;Free Java &amp;amp; OpenJDK Info for Daily Java Usage&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/08/17/spring-authorization-server-officially-moves-to-spring-projects"&gt;Spring Authorization Server officially moves to spring-projects&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/08/12/spring-data-2021-0-4-and-2020-0-12-released"&gt;Spring Data 2021.0.4 and 2020.0.12 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/08/12/spring-data-2021-1-0-m2-released"&gt;Spring Data 2021.1.0-M2 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.vinsguru.com/spring-webclient-with-feign/amp/?__twitter_impression=true"&gt;Spring WebClient with Feign&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/JavaAtMicrosoft/status/1427706803329114118"&gt;Get hands-on with Azure Spring Cloud in 90 minutes.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1425887581833596931"&gt;Did you see Cora Iberkleid&amp;rsquo;s power session on Spring Cloud Gateway? It was awesome! &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Authorization Server officially moves to spring-projects</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/17/spring-authorization-server-officially-moves-to-spring-projects" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2021-08-17:4517</id>
-    <updated>2021-08-17T10:00:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;We are very excited to announce that Spring Authorization Server has officially moved out of experimental status and into the &lt;a href="https://github.com/spring-projects/spring-authorization-server"&gt;Spring project¡¯s portfolio&lt;/a&gt;!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This move coincides with this week&amp;#8217;s 0.2.0 release, which is the first officially supported production-ready version backed by our new &lt;a href="https://github.com/spring-projects/spring-authorization-server#support-policy"&gt;support policy&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Since &lt;a href="https://spring.io/blog/2020/04/15/announcing-the-spring-authorization-server"&gt;announcing the Spring Authorization Server&lt;/a&gt; in April 2020, the &lt;a href="https://github.com/spring-projects/spring-authorization-server/wiki/Feature-List"&gt;implemented features&lt;/a&gt; provide support for a large portion of the OAuth 2.1 Authorization Framework and modest support for OpenID Connect 1.0. However, as we move onto the next phase of development, our focus changes to advancing the support for OpenID Connect 1.0.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team, I would like to thank everyone who has contributed and helped grow this project in this short time frame. We are confident in the base that we have built so far and are excited for the next phase of the project. We look forward to continuing this work together and ultimately making Spring Authorization Server the de facto framework for OAuth 2 Authorization Server support on the Java platform.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Let¡¯s get moving onto the next phase!&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Data 2021.1.0-M2 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/12/spring-data-2021-1-0-m2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Jens Schauder</name>
-    </author>
-    <id>tag:spring.io,2021-08-12:4516</id>
-    <updated>2021-08-12T18:50:35Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team, I¡¯m pleased to announce the availability of the Spring Data &lt;code&gt;2021.1.0-M2&lt;/code&gt; milestone release.&lt;/p&gt;
-&lt;p&gt;The release is built on top of Spring Framework &lt;code&gt;5.3.9&lt;/code&gt;.&lt;br/&gt;For your convenience, you can consume this release through Spring Boot &lt;code&gt;2.6.0-M2&lt;/code&gt;, which our team mates on the Boot team will release in about a week.&lt;/p&gt;
-&lt;p&gt;To round things off, here are the links to the artifacts, changelogs, and documentation:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Data Commons 2.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-commons/2.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-commons/releases/tag/2.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data JDBC 2.3 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-jdbc/2.3.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/2.3.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/2.3.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-jdbc/releases/tag/2.3.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data JPA 2.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-jpa/2.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-jpa/releases/tag/2.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Cassandra 3.3 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-cassandra/3.3.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/3.3.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/3.3.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-cassandra/releases/tag/3.3.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data KeyValue 2.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-keyvalue/2.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-keyvalue/releases/tag/2.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Neo4j 6.2 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-neo4j/6.2.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/6.2.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/6.2.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-neo4j/releases/tag/6.2.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data MongoDB 3.3 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-mongodb/3.3.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/3.3.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/3.3.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-mongodb/releases/tag/3.3.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Geode 2.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-geode/2.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-geode/releases/tag/2.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data R2DBC 1.4 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-r2dbc/1.4.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.4.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-r2dbc/releases/tag/1.4.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data LDAP 2.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-ldap/2.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-ldap/releases/tag/2.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Envers 2.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-envers/2.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-envers/releases/tag/2.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data REST 3.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-rest-webmvc/3.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-rest/releases/tag/3.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Redis 2.6 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-redis/2.6.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.6.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.6.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-redis/releases/tag/2.6.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Elasticsearch 4.3 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-elasticsearch/4.3.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/4.3.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/4.3.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-elasticsearch/releases/tag/4.3.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Couchbase 4.3 M2 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-couchbase/4.3.0-M2"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/4.3.0-M2/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/4.3.0-M2/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://github.com/spring-projects/spring-data-couchbase/releases/tag/4.3.0-M2"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
