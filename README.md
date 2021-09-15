@@ -1,5 +1,5 @@
 # :pushpin: SpringProject02
->Spring Framework 기반 웹 서비스
+>Spring Framework 기반 웹 
 >
 >[코드로 배우는 스프링 웹 프로젝트]을 통해 학습된 내용을 기반으로 제작된 프로젝트
 
