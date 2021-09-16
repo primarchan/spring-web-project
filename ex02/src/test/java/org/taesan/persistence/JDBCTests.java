@@ -17,7 +17,7 @@ public class JDBCTests {
 		
 			log.info(clz);
 			
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "book_ex", "1111");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "book_ex", "book_ex");
 			
 			log.info(conn);
 			
