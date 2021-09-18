@@ -41,6 +41,12 @@ public class BoardController {
 		
 		return "redirect:/board/list";
 	}
+	
+	// 입력 페이지
+	@GetMapping("/register")
+	public void register() {
+		
+	}
 
 	// 조회
 	@GetMapping("/get")
