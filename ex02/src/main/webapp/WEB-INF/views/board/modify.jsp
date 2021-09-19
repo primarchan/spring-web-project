@@ -8,7 +8,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Board Read</h1>
+                    <h1 class="page-header">Board Modify/Delete</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -17,10 +17,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Board Read Page</div>
+                        <div class="panel-heading">Board Modify/Delete Page</div>
+                        
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                        
+                        <form>
                        		<div class="form-group">
                            		<label>BNO</label>
                            		<input class="form-control" name="bno" value='<c:out value="${board.bno}"/>' readonly="readonly">
@@ -28,12 +29,12 @@
                            	
                        		<div class="form-group">
                            		<label>Title</label>
-                           		<input class="form-control" name="title" value='<c:out value="${board.title}"/>'  readonly="readonly">
+                           		<input class="form-control" name="title" value='<c:out value="${board.title}"/>'>
                            	</div>
                            	
                        		<div class="form-group">
                            		<label>Content</label>
-                           		<textarea rows="5" cols="50" name="content" class="form-control" readonly="readonly"><c:out value="${board.content}"/></textarea>
+                           		<textarea rows="5" cols="50" name="content" class="form-control"><c:out value="${board.content}"/></textarea>
                            	</div>
                            	
                        		<div class="form-group">
@@ -41,8 +42,11 @@
                            		<input class="form-control" name="writer" value='<c:out value="${board.writer}"/>' readonly="readonly">
                            	</div>
                            	
-                            <button type="reset" class= "btn btn-default"><a href='/board/modify?bno=<c:out value="${board.bno}"/>'>Modify</a></button>
-                            <button type="submit" class="btn btn-info"><a href='/board/list' >List</a></button>
+                            <button class="btn btn-default" data-oper='modify'>Modify</button>
+                            <button class="btn btn-danger" data-oper='remove'>Remove</button>
+                            <button class="btn btn-info" data-oper='list'>List</button>
+                        </form>
+                        
                             
                         </div>
                         <!-- /.panel-body -->
@@ -52,5 +56,35 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+            
+<script>
+$(document).ready(function() {
+	
+	var formObj = $("form");
+	
+	$('.btn').click(function(e){
+		
+		e.preventDefault();
+		
+		var operation = $(this).data("oper");
+		
+		console.log(operation);
+		
+		if(operation === 'list'){
+			self.location = "/board/list";
+		}else if(operation === 'remove'){
+			formObj.attr("action", "/board/remove")
+			.attr("method", "post");
+			formObj.submit();
+		}else if(operation === 'modify'){
+			formObj.attr("action", "/board/modify")
+			.attr("method", "post");
+			formObj.submit();
+		}
+		
+	})
+	
+})
+</script>            
             
 <%@ include file="../includes/footer.jsp" %>

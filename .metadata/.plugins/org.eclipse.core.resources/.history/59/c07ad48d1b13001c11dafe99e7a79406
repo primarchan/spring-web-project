@@ -1,9 +1,0 @@
-package org.taesan.sample;
-
-import org.springframework.stereotype.Component;
-
-@Component
-@D
-public class Chef {
-
-}

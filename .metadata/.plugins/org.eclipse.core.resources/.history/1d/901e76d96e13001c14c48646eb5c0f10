@@ -1,8 +1,0 @@
-package org.taesan.sample;
-
-import org.junit.runner.RunWith;
-
-@RunWith(SpringJUnit)
-public class SampleTests {
-
-}

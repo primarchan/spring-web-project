@@ -44,15 +44,15 @@ public class BoardController {
 	
 	// 입력 페이지
 	@GetMapping("/register")
-	public void register() {
+	public void registerGET() {
 		
 	}
 
 	// 조회
-	@GetMapping("/get")
+	@GetMapping({"/get", "/modify"})
 	public void get(@RequestParam("bno") Long bno, Model model) {
 		
-		log.info("/get");
+		log.info("/get or modify");
 		model.addAttribute("board", service.get(bno));
 	}
 	

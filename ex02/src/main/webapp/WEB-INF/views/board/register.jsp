@@ -16,11 +16,12 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                     
-                        <div class="panel-heading">Board Register</div>
+                        <div class="panel-heading">Board Register Page</div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                         
                         	<form action="/board/register" method="post">
+                        	
                         		<div class="form-group">
                             		<label>Title</label>
                             		<input class="form-control" name="title">
@@ -35,8 +36,10 @@
                             		<label>Writer</label>
                             		<input class="form-control" name="writer">
                             	</div>
+                            	
                             	<button type="submit" class="btn btn-default">Submit Button</button>
                                 <button type="reset" class="btn btn-default">Reset Button</button>
+                                
                         	</form>
 
                         </div>
