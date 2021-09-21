@@ -1,6 +1,0 @@
-package org.taesan.mapper;
-
-public interface TimeMapper {
-	
-	String get
-}

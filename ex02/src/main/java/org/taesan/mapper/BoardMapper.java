@@ -4,6 +4,7 @@ import java.util.List;
 
 // import org.apache.ibatis.annotations.Select;
 import org.taesan.domain.BoardVO;
+import org.taesan.domain.Criteria;
 
 public interface BoardMapper {
 	
@@ -25,6 +26,7 @@ public interface BoardMapper {
 	// delete 처리
 	public int delete(Long bno);
 	
-
+	// 페이징 처리
+	public List<BoardVO> getListWithPaging(Criteria cri);
 
 }
