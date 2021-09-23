@@ -24,5 +24,8 @@ public interface BoardService {
 	
 	// 목록(리스트) + 페이징 처리
 	public List<BoardVO> getList(Criteria cri);
+	
+	// 전체 데이터 개수 처리
+	public int getTotal(Criteria cri);
 
 }

@@ -40,7 +40,13 @@ public class BoardController {
 		log.info("list" + cri);
 		model.addAttribute("list", service.getList(cri));
 		// BoardController 에서 PageDTO를 사용할 수 있도록 Model에 담아서 화면에 전달해 줄 필요가 있음
-		model.addAttribute("pageMaker", new PageDTO(cri, 123));
+		// model.addAttribute("pageMaker", new PageDTO(cri, 123));
+		
+		int total = service.getTotal(cri);
+		
+		log.info("total : " + total);
+		
+		model.addAttribute("pageMaker", new PageDTO(cri, total));
 	}
 	
 	// 등록

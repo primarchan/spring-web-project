@@ -34,7 +34,7 @@
 
 
 ## 4. 핵심 기능
->이 서비스는 총 7단계로 구성되어있습니다.
+>웹 프로젝트는 총 7단계로 구성되어있습니다.
 >
 >[Spring 개발 환경 구축 단계] 부터 [Spring Web Security를 이용한 로그인 처리]까지 각 단계별로 기능들을 구현했습니다.
 
@@ -50,26 +50,37 @@
 - **Maven이 사용하는 pom.xml** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex00/pom.xml)
   - 생성된 프로젝트의 라이브러리는 pom.xml 파일을 통해서 관리
 
+<br>
+
 - **servlet-context.xml** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex00/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml)
   - 웹과 관련된 스프링 설정파일
 
+<br>
+
 - **root-context.xml** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex00/src/main/webapp/WEB-INF/spring/root-context.xml)
   - 스프링 설정파일
+
+<br>
 
 - **의존성 주입 테스트** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/tree/master/ex00/src/main/java/org/taesan/sample)
   - Restaurant 객체 생성 후 그곳에서 근무하는 Chef 객체를 주입하는 예제
   - Spring에서는 생성자를 이용한 주입과 Setter 메서드를 이용한 주입으로 의존성 구현
   - 의존성 주입 설정 방식은 주로 XML이나 Annotation을 이용해 처리
 
+<br>
+
 - **커넥션 풀 설정** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex00/src/main/webapp/WEB-INF/spring/root-context.xml#L23)
   - Java에서는 DataSource라는 인터페이스를 통해 커넥션 풀을 사용
   - DataSource를 통해 매번 데이터베이스와 연결하는 방식이 아닌, 미리 연결을 맺어주고 반환하는 구조를 이요하여 성능 향상을 꾀함
   - 커넥션 풀에는 여러 종류가 있고, spring-jdbc를 이요하는 방식도 있지만 본 프로젝트에서는 HikariCP 이용
 
+<br>
+
 - **MyBatis와 Spring 연동** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex00/src/main/webapp/WEB-INF/spring/root-context.xml#L27)
   - MyBatis는 'SQL 매핑(mapping) 프레임워크'로 분류
   - MyBatis와 Spring 연동을 통해 SQL 처리 속도 향상
   - 개발 편의성 증대를 위해 [Mapper](https://github.com/PrimarchAn/SpringProject02/blob/master/ex00/src/main/resources/org/taesan/mapper/TimeMapper.xml)를 XML과 인터페이스 + Annotation 형태로 작성 
+
 </div>
 </details>
 
@@ -81,10 +92,68 @@
 </div>
 </details>
 
-### 4.3. 기본적인 웹 게시물 관리
+### 4.3. [기본적인 웹 게시물 관리](https://github.com/PrimarchAn/SpringProject02/tree/master/ex02)
 <details>
 <summary><b>세부 설명 펼치기</b></summary>
 <div markdown="1">
+
+- **웹 프로젝트의 기본 구성**
+  - 일반적으로 웹 프로젝트는 3-tier 방식으로 구성(Presentaiton, Business, Persistence)
+  - Presentation Tier(화면 계층) : 화면에 보여주는 기술을 사용하는 영역
+  - Business Tier(비즈니스 계층) : 순순한 비즈니스 로직을 담고 있는 영역, 고객들이 사용하는 용어를 그대로 메서드에 사용(설계와 고객의 요구 사항이 정확히 일치)
+  - Persistence Tier(영속 or 데이터 계층) : 데이터를 어떤 방식으로 보관하고, 사용하는가에 대한 설계가 들어가는 계층
+  - Spring MVC 영역은 Presentation Tier를 구성
+
+<br>
+
+- **Create(Insert) 처리**
+  - insert만 처리되고 생성된 PK 값을 알 필요가 없는 경우 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/resources/org/taesan/mapper/BoardMapper.xml#L13)
+  - insert문이 실행되고 생성된 PK 값을 알아야 하는 경우 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/resources/org/taesan/mapper/BoardMapper.xml#L18)
+
+<br>
+
+- **Read(Select) 처리**
+  - insert가 된 데이터를 조회하는 작업은 PK를 이용해서 처리하므로 BoardMapper의 파라미터 역시 BoardVO 클래스의 bno 타입 정보를 이용해서 처리 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/java/org/taesan/mapper/BoardMapper.java#L21)
+  - MyBatis는 bno라는 칼럼이 존재하면 인스턴스의 `setBno()`를 호출
+  - MyBatis의 모든 파라미터와 리턴 타입의 처리는 `get 파라미터명()`, `set 칼럼명()`의 규칙으로 호출
+  - `#{속성}`이 1개만 존재하는 경우에는 별도의 `get 파라미터명()`을 사용하지 않고 처리
+
+<br>
+
+ - **Update 처리**
+  - `update()`의 메서드 리턴 타입은 `int`로 지정해서 만일 정상적으로 데이터가 수정되면 1 이상의 값을 가지도록 설계 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/java/org/taesan/mapper/BoardMapper.java#L24)
+  - `#{title}`과 같은 부분은 파라미털로 전달된 BoardVO 객체의 `getTitle()`과 같은 메서드들을 호출해서 파라미터들이 처리 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/resources/org/taesan/mapper/BoardMapper.xml#L37)
+
+<br>
+
+- **Delete 처리**
+  - 특정한 데이터를 삭제하는 작업은 PK값을 이용해서 처리(조회 작업과 유사) :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/java/org/taesan/mapper/BoardMapper.java#L27)
+  - 등록, 삭제, 수정과 같은 DML 작업은 '몇건의 데이터가 삭제(혹은 수정)되었는지'를 반환
+  - `delete()`의 메서드 리턴 타입은 `int`로 지정해서 만일 정상적으로 데이터가 삭제되면 1 이상의 값을 가지도록 설계 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/java/org/taesan/mapper/BoardMapper.java#L27)
+
+<br>
+
+- **비즈니스 계층 구현과 테스트** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/tree/master/ex02/src/main/java/org/taesan/service)
+ - 등록 작업의 구현과 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/service/BoardServiceTests.java#L32)
+ - 목록(리스트) 작업의 구현과 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/service/BoardServiceTests.java#L45)
+ - 조회 작업의 구현과 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/service/BoardServiceTests.java#L52)
+ - 삭제/수정 구현과 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/service/BoardServiceTests.java#L58)
+
+<br>
+
+- **프레젠테이션(웹) 계층의 CRUD 구현** :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/java/org/taesan/controller/BoardController.java)
+  - 목록에 대한 처리와 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/controller/BoardControllerTests.java#L40)
+  - 등록 처리와 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/controller/BoardControllerTests.java#L47)
+  - 조회 처리와 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/controller/BoardControllerTests.java#L59)
+  - 수정 처리와 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/controller/BoardControllerTests.java#L70)
+  - 삭제 처리와 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/controller/BoardControllerTests.java#L84)
+
+<br>
+
+- **페이징 처리**
+  - XML에서 사용할 수 없는 부등호 사용을 위해 CDATA 섹션 처리 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/main/resources/org/taesan/mapper/BoardMapper.xml#L45)
+  - MyBatis 처리와 테스트 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex02/src/test/java/org/taesan/mapper/BoardMapperTests.java#L88)
+
 
 </div>
 </details>
@@ -113,7 +182,7 @@
 </div>
 </details>
 
-### 4.7. Spring Web Security를 이용한 로그린 처리
+### 4.7. Spring Web Security를 이용한 로그인 처리
 <details>
 <summary><b>세부 설명 펼치기</b></summary>
 <div markdown="1">
