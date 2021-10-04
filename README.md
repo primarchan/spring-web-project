@@ -84,10 +84,56 @@
 </div>
 </details>
 
-### 4.2. 스프링 MVC 설정
+### 4.2. [스프링 MVC 설정](https://github.com/PrimarchAn/SpringProject02/tree/master/ex01)
 <details>
 <summary><b>세부 설명 펼치기</b></summary>
 <div markdown="1">
+
+- **스프링MVC의 기본 구조**
+  - 스프링MVC 프로젝트를 구성해서 사용한다는 의미는 내부적으로는 root-context.xml로 사용하는 일반 Java 영역(POJO, Plain Old Java Object)과 servlet-context.xml로 설정하는 Web 관련 영역을 같이 연동해서 구동
+
+<br>
+
+- **스프링MVC의 Controller**
+  - 스프링MVC를 이용하는 경우 작성되는 `Controller`의 특징
+    - `HttpServletRequest`, `HttpServletResponse`를 거의 사용할 필요없이 필요한 기능 구현
+    - 다양한 타입의 파라미터 처리, 다양한 타입의 리턴 타입 사용 가능
+    - GET방식, POST방식 등 전송 방식에 대한 처리를 어노테이션으로 처리 가능
+    - 상속/인터페이스 방식 대신에 어노테이션만으로도 필요한 설정 가능
+  - `Controller`의 리턴타입
+    - String : jsp를 이용하는 경우에는 jsp 파일의 경로와 파일이름을 나타내기 위해서 사용 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/java/org/taesan/controller/SampleController.java#L111)
+    - void : 호출하는 URL과 동일한 이름의 jsp를 의미 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/java/org/taesan/controller/SampleController.java#L131)
+    - VO, DTO 타입 : 주로 JSON 타입의 데이터를 만들어서 반환하는 용도로 사용(추가적인 라이브러리 필요) :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/java/org/taesan/controller/SampleController.java#L137)
+    - ResponseEntity 타입: response할 때 Http 헤더 정보와 내용을 가공하는 용도로 사용(추가적인 라이브러리 필요) :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/java/org/taesan/controller/SampleController.java#L150)
+    - Model, ModelAndView: Model로 데이터를 반환하거나 화면까지 같이 지정하는 경우에 사용(최근에는 많이 사용 안함)
+    - HttpHeaders : 응답에 내용 없이 Http 헤더 메시지만 전달하는 용도로 사용
+  - @Controller :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/java/org/taesan/controller/SampleController.java#L24)
+    - 해당 클래스의 인스턴스를 스프링의 빈으로 등록하고 `Controller`로 사용
+    - `<component-scan>`과 같이 활용 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml#L41)
+    - 스프링MVC의 `Controller`는 메서드의 파라미터를 자동으로 수집, 변환하는 편리한 기능을 제공
+    - Java Beans 규칙에 맞게 작성되어야 함 :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/java/org/taesan/domain/SampleDTO.java)
+      - 생성자가 없거나 빈 생성자 
+      - 올바른 규칙으로 만들어진 `Getter/Setter 메서드`
+  - @RequestMapping :pushpin: [코드 확인](https://github.com/PrimarchAn/SpringProject02/blob/master/ex01/src/main/java/org/taesan/controller/SampleController.java#L25)
+    - 특정한 URI에 대한 처리를 해당 `Controller`나 메서드에서 처리
+    - 스프링 4.3 전까지는 `@RequestMapping( method =‘get’)` 방식으로 사용
+    - 스프링 4.3이후에는 `@GetMapping`, `@PostMapping`등으로 간단히 표현 가능
+  - `RedirectAttribute`
+    - 화면에 한번만 전달되는 파라미터를 처리하는 용도 
+    - 내부적으로 `HttpSession 객체`에 담아서 한번만 사용되고, 폐기 
+
+
+<br>
+
+- **데이터 전달자 역할을 하는 Model**
+  - `Controller`의 메서드를 작성할 때는 특별하게 Model이라는 타입을 파라미터로 지정
+    - Model 객체는 JSP에 `Controller`에서 생성된 데이터를 담아서 전달하는 역할을 하는 존재
+    - JSP와 같은 뷰(View)로 전달해야 하는 데이터를 담아서 보냄
+    - 메서드의 파라미터에 Model 타입이 지정된 경우 스프링은 특별하게 Model 타입의 객체를 만들어서 메서드에 주입
+    - 모델2 방식에서 사용하는 `request.setAttribute( )`와 유사한 역할
+  - `@ModelAttribute`
+    - `Controller`에서 메서드의 파라미터는 기본자료형을 제외한 객체형 타입은 다시 화면으로 전달
+    - `@ModelAttribute`는 명시적으로 화면에 전달되도록 지정 
 
 </div>
 </details>
