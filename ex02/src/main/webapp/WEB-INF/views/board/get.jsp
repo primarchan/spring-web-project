@@ -42,9 +42,11 @@
                            	</div>
                            	
                            	<form id='actionForm' action="/board/list" method='get'>
-								<input type='hidden' name='pageNum' value = '${cri.pageNum}'>
-								<input type='hidden' name='amount' value = '${cri.amount}'>
-								<input type='hidden' name='bno' value = '${board.bno}'>
+								<input type='hidden' name='bno' value='<c:out value="${board.bno}"/>'>
+								<input type='hidden' name='pageNum' value='<c:out value="${cri.pageNum}"/>'>
+								<input type='hidden' name='amount' value='<c:out value="${cri.amount}"/>'>
+								<input type='hidden' name='type' value='<c:out value="${cri.type}"/>'>
+								<input type='hidden' name='keyword' value='<c:out value="${cri.keyword}"/>'>
 							</form>
                            	
                            	<button type="button" class="btn btn-default listBtn"><a href='/board/list'>List</a></button>

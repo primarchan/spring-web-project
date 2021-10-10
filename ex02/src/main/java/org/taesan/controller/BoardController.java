@@ -84,10 +84,15 @@ public class BoardController {
 			rttr.addFlashAttribute("result", "success");
 		}
 		
+		// getListLink()를 이용하여 코드 간소화
+		/*
 		rttr.addAttribute("pageNum", cri.getPageNum());
 		rttr.addAttribute("amount", cri.getAmount());
+		rttr.addAttribute("type", cri.getType());
+		rttr.addAttribute("keyword", cri.getKeyword());
+		*/
 		
-		return "redirect:/board/list";
+		return "redirect:/board/list" + cri.getListLink();
 	}
 	
 	//  삭제
@@ -100,10 +105,15 @@ public class BoardController {
 			rttr.addFlashAttribute("result", "success");
 		}
 		
+		// getListLink()를 이용하여 코드 간소화
+		/*
 		rttr.addAttribute("pageNum", cri.getPageNum());
 		rttr.addAttribute("amount", cri.getAmount());
+		rttr.addAttribute("type", cri.getType());
+		rttr.addAttribute("keyword", cri.getKeyword());
+		*/
 		
-		return "redirect:/board/list";
+		return "redirect:/board/list" + cri.getListLink();
 	}
 	
 }

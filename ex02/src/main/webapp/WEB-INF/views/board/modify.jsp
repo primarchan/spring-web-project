@@ -24,32 +24,34 @@
 							<form role="form" action="/board/modify" method="post">
        					 		<input type='hidden' name='pageNum' value='<c:out value="${cri.pageNum}"/>'>
         						<input type='hidden' name='amount' value='<c:out value="${cri.amount}"/>'>
-                       		<div class="form-group">
-                           		<label>BNO</label>
-                           		<input class="form-control" name="bno" value='<c:out value="${board.bno}"/>' readonly="readonly">
-                           	</div>
+        						<input type='hidden' name='type' value='<c:out value="${cri.type}"/>'>
+        						<input type='hidden' name='keyword' value='<c:out value="${cri.keyword}"/>'>
+        						
+	                       		<div class="form-group">
+	                           		<label>BNO</label>
+	                           		<input class="form-control" name="bno" value='<c:out value="${board.bno}"/>' readonly="readonly">
+	                           	</div>
                            	
-                       		<div class="form-group">
-                           		<label>Title</label>
-                           		<input class="form-control" name="title" value='<c:out value="${board.title}"/>'>
-                           	</div>
+	                       		<div class="form-group">
+	                           		<label>Title</label>
+	                           		<input class="form-control" name="title" value='<c:out value="${board.title}"/>'>
+	                           	</div>
                            	
-                       		<div class="form-group">
-                           		<label>Content</label>
-                           		<textarea rows="5" cols="50" name="content" class="form-control"><c:out value="${board.content}"/></textarea>
-                           	</div>
+	                       		<div class="form-group">
+	                           		<label>Content</label>
+	                           		<textarea rows="5" cols="50" name="content" class="form-control"><c:out value="${board.content}"/></textarea>
+	                           	</div>
                            	
-                       		<div class="form-group">
-                           		<label>Writer</label>
-                           		<input class="form-control" name="writer" value='<c:out value="${board.writer}"/>' readonly="readonly">
-                           	</div>
+	                       		<div class="form-group">
+	                           		<label>Writer</label>
+	                           		<input class="form-control" name="writer" value='<c:out value="${board.writer}"/>' readonly="readonly">
+	                           	</div>
                            	
-                            <button class="btn btn-default" data-oper='modify'>Modify</button>
-                            <button class="btn btn-danger" data-oper='remove'>Remove</button>
-                            <button class="btn btn-info" data-oper='list'>List</button>
-                        </form>
+	                            <button class="btn btn-default" data-oper='modify'>Modify</button>
+	                            <button class="btn btn-danger" data-oper='remove'>Remove</button>
+	                            <button class="btn btn-info" data-oper='list'>List</button>
+                        	</form>
                         
-                            
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -89,10 +91,14 @@ $(document).ready(function() {
 			formObj.attr("action", "/board/list").attr("method", "get");
 			var pageNumTag = $("input[name='pageNum']").clone();
 			var amountTag = $("input[name='amount']").clone();
+			var keywordTag = $("input[name='keyword']").clone();
+			var typeTag = $("input[name='type']").clone();
 			
 			formObj.empty();
 			formObj.append(pageNumTag);
 			formObj.append(amountTag);
+			formObj.append(keywordTag);
+			formObj.append(typeTag);
 		}
 		formObj.submit();	
 	});

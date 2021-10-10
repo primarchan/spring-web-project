@@ -43,6 +43,27 @@
                                 </c:forEach>
                             </table>
                             
+                            <div class='row'>
+                            	<div class="col-lg-12">
+                            	
+                                <form id='searchForm' action="/board/list" method="get">
+                            		<select name="type">
+                            			<option value="" <c:out value="${pageMaker.cri.type == null? 'selected' : ''}"/>>---</option>
+                            			<option value="T" <c:out value="${pageMaker.cri.type eq 'T'? 'selected' : ''}"/>>제목</option>
+                            			<option value="C" <c:out value="${pageMaker.cri.type eq 'C'? 'selected' : ''}"/>>내용</option>
+                            			<option value="W" <c:out value="${pageMaker.cri.type eq 'W'? 'selected' : ''}"/>>작성자</option>
+                            			<option value="TC" <c:out value="${pageMaker.cri.type eq 'TC'? 'selected' : ''}"/>>제목+내용</option>
+                            			<option value="TCW" <c:out value="${pageMaker.cri.type eq 'TCW'? 'selected' : ''}"/>>제목+내용+작성자</option>
+                            		</select>
+                            	<input type="text" name="keyword" value='<c:out value="${pageMaker.cri.keyword}"/>'/>
+                           		<input type="hidden" name="pageNum" value='<c:out value="${pageMaker.cri.pageNum}"/>'/>
+                           		<input type="hidden" name="amount" value='<c:out value="${pageMaker.cri.amount}"/>'/>
+                            	<button class="btn btn-default">Search</button>
+                            </form>
+                            	
+                            	</div>
+                            </div>
+                            
                             <!-- pagination -->
 			         		<div class="pull-right">
                            		<ul class="pagination">
@@ -70,8 +91,10 @@
 							<!--  end Pagination -->
 							
 							<form id='actionForm' action="/board/list" method='get'>
-								<input type='hidden' name='pageNum' value = '${pageMaker.cri.pageNum}'>
-								<input type='hidden' name='amount' value = '${pageMaker.cri.amount}'>
+								<input type='hidden' name='pageNum' value='<c:out value="${pageMaker.cri.pageNum}"/>'>
+								<input type='hidden' name='amount' value='<c:out value="${pageMaker.cri.amount}"/>'>
+								<input type='hidden' name='type' value='<c:out value="${pageMaker.cri.type}"/>'>
+								<input type='hidden' name='keyword' value='<c:out value="${pageMaker.cri.keyword}"/>'>
 							</form>
 							
 							
@@ -164,6 +187,24 @@ $(document).ready(function() {
     	actionForm.attr("action", "/board/get");
     	
     	actionForm.submit();
+    });
+    
+    // 검색 버튼의 이벤트 처리
+    var searchForm = $("#searchForm");
+    
+    $("#searchForm button").on("click", function(e){
+    	
+    	// 화면에 키워드가 없다면 검색을 하지 않도록 제어
+    	if(!searchForm.find("option:selected").val()){
+    		alert("키워드를 입력하세요");
+    		return false;
+    	}
+    	
+    	// 브라우저에서 검색 버튼을 클릭하면 <form> 태그의 전송은 막고, 페이지 번호는 1이 되도록 처리
+    	searchForm.find("input[name='pageNum']").val("1");
+    	e.preventDefault();
+    	
+    	searchForm.submit();
     });
     
 });
