@@ -1,5 +1,6 @@
 package org.taesan.mapper;
 
+import java.util.List;
 import java.util.stream.IntStream;
 
 import org.junit.Test;
@@ -7,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.taesan.domain.Criteria;
 import org.taesan.domain.ReplyVO;
 
 import lombok.Setter;
@@ -75,6 +77,17 @@ public class ReplyMapperTests {
 		int count = mapper.update(vo);
 		
 		log.info("UPDATE COUNT: " + count);
+	}
+	
+	@Test
+	public void testList() {
+		
+		Criteria cri = new Criteria();
+		
+		// 300L
+		List<ReplyVO> replies = mapper.getListWithPaging(cri, bnoArr[0]);
+		
+		replies.forEach(reply -> log.info(reply));
 	}
 	
 }
