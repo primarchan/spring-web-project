@@ -55,7 +55,7 @@ public class ReplyController {
 	}
 	
 	// 댓글 조회
-	@GetMapping(value = "/{rno}/", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_UTF8_VALUE })
+	@GetMapping(value = "/{rno}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_UTF8_VALUE })
 	public ResponseEntity<ReplyVO> get(@PathVariable("rno") Long rno) {
 		
 		log.info("get: " + rno);
@@ -64,10 +64,10 @@ public class ReplyController {
 	}
 	
 	// 댓글 삭제
-	@DeleteMapping(value = "/{rno}/", produces = { MediaType.TEXT_PLAIN_VALUE })
-	public ResponseEntity<String> reomve(@PathVariable("rno") Long rno) {
+	@DeleteMapping(value = "/{rno}", produces = { MediaType.TEXT_PLAIN_VALUE })
+	public ResponseEntity<String> remove(@PathVariable("rno") Long rno) {
 		
-		log.info("reomve: " + rno);
+		log.info("remove: " + rno);
 		
 		return service.remove(rno) == 1 ? new ResponseEntity<>("success", HttpStatus.OK) : new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR); // 삼항 연산자 처리
 	}
