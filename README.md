@@ -242,4 +242,4 @@
 </br>
 
 ## 5. 회고 / 느낀점
->프로젝트 개발 회고 글: https://taesancoding.tistory.com/
+><a href="https://taesancoding.tistory.com"><img src="https://img.shields.io/badge/Velog-1DA1F2?style=plastic&logo=Velog&logoColor=white"/></a></a> / 프로젝트 개발 회고 글
